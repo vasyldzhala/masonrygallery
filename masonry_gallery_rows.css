@@ -1,0 +1,65 @@
+body {
+    overflow-y: scroll;
+}
+
+.masonry-gallery-rows {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    opacity: 0;
+}
+
+.masonry-gallery-rows img { /*Here you can change paddings, borders and margins of images*/
+    padding: 2px;
+    margin: 0;
+    border-radius: 5px;
+    height: 300px;
+}
+
+/*Styles for anchors and captions*/
+.thumbnail-item {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.thumbnail-item img {
+    display: block;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.caption-center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+.caption-center p {
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    opacity: 0.3;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.thumbnail-item:hover img {
+    -webkit-filter: grayscale(100%) brightness(90%);
+    filter: grayscale(100%) brightness(90%);
+}
+.thumbnail-item:hover p {
+    opacity: 1;
+}
