@@ -10,4 +10,6 @@ Usage:
 3. You can change max rows' height in masonry_gallery_rows.js
 4. You can change paddings, borders and margins of images in CSS file.
 
-See example of usage in index.html. 
+See example of usage in index.html.
+![screenshot](https://github.com/vasyldzhala/masonrygallery/blob/master/masonry_gallery_screen.JPG)
+
